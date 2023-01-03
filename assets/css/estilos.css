@@ -235,7 +235,7 @@ body {
 }
 
 .cartao__titulo {
-    font-size: 1.2rem;
+    font-size: 18px;
     font-weight: 700;
     grid-column: span 2;
 }
@@ -254,6 +254,11 @@ body {
 
 .cartao__info--tempo::before {
     content: "\e90c";
+    margin-right: 8px;    
+}
+
+.cartao__info--moeda::before {
+    content: "\e905";
     margin-right: 8px;    
 }
 
@@ -276,6 +281,11 @@ body {
 
 .cartao__botao--play::before {
     content: "\e90b";
+    font-size: 24px;
+}
+
+.cartao__botao--carrinho::before {
+    content: "\e901";
     font-size: 24px;
 }
 
@@ -317,7 +327,6 @@ body {
         row-gap: 24px;
         width: 256px;
         padding: 16px;
-        box-sizing: border-box;
         align-self: flex-start;
     }
 
@@ -326,7 +335,7 @@ body {
     }
 
     .cartao__link {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         font-weight: 600;
         color: #0480DC;
         justify-self: flex-end;
